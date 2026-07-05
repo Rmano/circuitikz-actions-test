@@ -49,6 +49,11 @@ fi
 # This is the important SHA: the gh-pages commit containing the generated files.
 ARTIFACT_SHA="$(git rev-parse HEAD)"
 
+# update timestamp
+cd ..
+python3 tools/update-gh-pages-info.py out/
+cd out
+
 python3 - "$RELEASE_NAME" "$ARTIFACT_SHA" "$GITHUB_REPOSITORY" <<'PY'
 from pathlib import Path
 import re
