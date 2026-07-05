@@ -11,7 +11,7 @@ permissions:
 jobs:
   build-and-deploy:
     name: Build manual and deploy
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
@@ -24,7 +24,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y \
             build-essential \
-            texlive-xetex \
             texlive-pictures \
             texlive-science \
             texlive-plain-generic \
