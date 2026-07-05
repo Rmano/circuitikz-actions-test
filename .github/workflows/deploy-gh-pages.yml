@@ -11,7 +11,7 @@ permissions:
 jobs:
   build-and-deploy:
     name: Build manual and deploy
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout
@@ -27,6 +27,7 @@ jobs:
             texlive-pictures \
             texlive-science \
             texlive-plain-generic \
+            texlive-latex-extra \
             lmodern \
             pandoc \
             zip
