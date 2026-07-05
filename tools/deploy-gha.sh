@@ -25,6 +25,7 @@ cp circuitikzgit.sty out/
 cp t-circuitikzgit.tex out/
 cp circuitikzmanualgit.pdf out/
 cp ctikzstylesgit.zip out/
+python3 tools/update-gh-pages-info.py out/
 
 cd out
 
