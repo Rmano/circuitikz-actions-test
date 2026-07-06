@@ -36,7 +36,9 @@ jobs:
             zip
 
       - name: Full manual build
-        run: make manual
+        run: |
+          make manual
+          make flat
 
       - name: Deploy generated release files and update index
         env:
